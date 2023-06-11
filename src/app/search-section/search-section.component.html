@@ -1,0 +1,47 @@
+<div class="search-section">
+  <form (ngSubmit)="onSearch()">
+    <label for="searchText">
+      Wpisz szukaną frazę:
+      <input id="searchText" [(ngModel)]="searchText" name="searchText">
+    </label>
+
+    <label for="departureCity">
+      Miejsce wylotu:
+      <input id="departureCity" [(ngModel)]="departureCity" name="departureCity">
+    </label>
+
+    <label for="destinationCity">
+      Miejsce docelowe:
+      <input id="destinationCity" [(ngModel)]="destinationCity" name="destinationCity">
+    </label>
+
+    <label for="departureDate">
+      Data wylotu:
+      <input id="departureDate" type="date" [(ngModel)]="departureDate" name="departureDate">
+    </label>
+
+    <label for="returnDate">
+      Data powrotu:
+      <input id="returnDate" type="date" [(ngModel)]="returnDate" name="returnDate">
+    </label>
+
+    <label for="hotelStandard">
+      Standard hotelu:
+      <select id="hotelStandard" [(ngModel)]="hotelStandard" name="hotelStandard">
+        <option value="">Wszystkie</option>
+        <option value="1">&#9733; (Podstawowy)</option>
+        <option value="2">&#9733;&#9733; (Standard)</option>
+        <option value="3">&#9733;&#9733;&#9733; (Komfort)</option>
+        <option value="4">&#9733;&#9733;&#9733;&#9733; (Luksusowy)</option>
+        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (Premium)</option>
+      </select>
+    </label>
+
+    <label for="tripDuration">
+      Czas trwania wycieczki (w dniach):
+      <input id="tripDuration" type="number" [(ngModel)]="tripDuration" name="tripDuration">
+    </label>
+
+    <button type="submit">Szukaj</button>
+  </form>
+</div>

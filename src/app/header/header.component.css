@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Allura';
+  src: url('C:\Users\milen\adventure-central-frontend\adventure-central-frontend\src\assets\Allura-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 3em; /* Zwiększenie czcionki do 4em */
+  border: 1px solid goldenrod;
+  border-radius: 44px;
+  padding: 1px;
+  font-family: 'Allura', sans-serif; /* Zastosowanie czcionki Allura */
+}
+
+.header p {
+  color: rgb(0, 0, 0);
+  font-size: 1.5em; /* Zwiększenie czcionki do 1.5em */
+  white-space: nowrap;
+  font-family: 'Arial', sans-serif; /* Zastosowanie czcionki Arial */
+}
+
+/* Dodajemy margines górny dla pierwszego elementu po nagłówku */
+.header + * {
+  margin-top: 100px; /* Dostosuj wartość marginesu do potrzeb */
+}

@@ -58,12 +58,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "hmr": true
+          },
           "configurations": {
             "production": {
               "browserTarget": "adventure-central-frontend:build:production"
             },
             "development": {
-              "browserTarget": "adventure-central-frontend:build:development"
+              "browserTarget": "adventure-central-frontend:build:development",
+              "hmr": true
             }
           },
           "defaultConfiguration": "development"

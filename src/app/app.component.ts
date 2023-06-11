@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'adventure-central-frontend';
+
+  // Dodaj to
+  searchQuery: string = '';
 }

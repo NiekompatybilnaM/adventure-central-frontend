@@ -1,0 +1,35 @@
+.home {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0.5cm;
+  border: 2px solid #d4af37; /* Starozłota ramka */
+  border-radius: 10px;
+}
+
+.travel-info h2 {
+  font-size: 2em;
+  border: 2px solid goldenrod;
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic; /* Pochylenie tekstu */
+  text-align: center; /* Wyśrodkowanie tekstu */
+  background-color: #f8f8f8; /* Tło nagłówka */
+}
+
+.travel-info p {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.travel-info p:first-child {
+  color: #000000;
+}
+
+.travel-info p:nth-child(2) {
+  color: #000000;
+}
+
+.travel-info p:last-child {
+  color: #000000;
+}

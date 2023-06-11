@@ -1,0 +1,51 @@
+<div class="buy-now-section">
+  <h2>Zamów teraz</h2>
+  <form (submit)="calculatePrice()">
+    <div class="form-group">
+      <label for="trip">Wybierz wycieczkę:</label>
+      <select id="trip" name="trip" required>
+        <option value="">Wybierz</option>
+        <option value="1">Wakacje na plaży</option>
+        <option value="2">Wycieczka górska</option>
+        <option value="3">Podróże kulturalne</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="surname">Nazwisko:</label>
+      <input type="text" id="surname" name="surname" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefon:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="duration">Czas trwania (w dniach):</label>
+      <input type="number" id="duration" name="duration" required>
+    </div>
+    <div class="form-group">
+      <label for="adults">Dorośli:</label>
+      <input type="number" id="adults" name="adults" required>
+    </div>
+    <div class="form-group">
+      <label for="children">Dzieci:</label>
+      <input type="number" id="children" name="children" required>
+    </div>
+    <div class="form-group">
+      <label for="pets">Zwierzęta:</label>
+      <input type="number" id="pets" name="pets" required>
+    </div>
+    <div class="form-group">
+      <label for="price">Cena:</label>
+      <input type="text" id="price" name="price" readonly [value]="totalPrice">
+    </div>
+    <button type="submit">Kup teraz</button>
+  </form>
+</div>
