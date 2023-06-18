@@ -3,7 +3,15 @@
     <div class="sidebar">
       <div class="menu-grid">
         <button class="menu-button"><a routerLink="/search">Wyszukaj wycieczkę</a></button>
-        <button class="menu-button"><a routerLink="/">Skorzystaj z gotowej propozycji</a></button>
+        <div class="dropdown">
+          <button class="menu-button">Skorzystaj z gotowej propozycji</button>
+          <ul class="menu-list dropdown-content">
+            <li><a routerLink="/romantic-tours">We dwoje <3</a></li>
+            <li><a routerLink="/mountain-lovers">Dla miłośników gór</a></li>
+            <li><a routerLink="/beach-relax">Chillout pod palmami</a></li>
+            <li><a routerLink="/children-camp">Kolonie dla dzieci</a></li>
+          </ul>
+        </div>
         <div class="dropdown">
           <button class="menu-button show-more">Pokaż więcej</button>
           <ul class="menu-list dropdown-content">

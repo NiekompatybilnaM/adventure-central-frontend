@@ -28,7 +28,7 @@
   color: rgb(0, 0, 0);
   font-size: 1.5em; /* Zwiększenie czcionki do 1.5em */
   white-space: nowrap;
-  font-family: 'Arial', sans-serif; /* Zastosowanie czcionki Arial */
+  font-family: Baskerville, serif;
 }
 
 /* Dodajemy margines górny dla pierwszego elementu po nagłówku */

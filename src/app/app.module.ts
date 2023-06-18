@@ -11,7 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecentlyBoughtSectionComponent } from './recently-bought-section/recently-bought-section.component';
 import { SearchSectionComponent } from './search-section/search-section.component';
 import { DataDisplayComponent } from './data-display/data-display.component';
-
+import { ForCouplesComponent } from './for-couples/for-couples.component';
+import { MountainLoversComponent } from './mountain-lovers/mountain-lovers.component';
+import { BeachRelaxComponent } from './beach-relax/beach-relax.component';
+import { ChildrenCampComponent } from './children-camp/children-camp.component';
+import { BuyNowSectionComponent } from './buy-now-section/buy-now-section.component';
+import { ToursPresentationSectionComponent } from './tours-presentation-section/tours-presentation-section.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,12 @@ import { DataDisplayComponent } from './data-display/data-display.component';
     RecentlyBoughtSectionComponent,
     SearchSectionComponent,
     DataDisplayComponent,
+    ForCouplesComponent,
+    MountainLoversComponent,
+    BeachRelaxComponent,
+    ChildrenCampComponent,
+    BuyNowSectionComponent,
+    ToursPresentationSectionComponent
   ],
   imports: [
     BrowserModule,

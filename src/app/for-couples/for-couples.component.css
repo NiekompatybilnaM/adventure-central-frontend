@@ -1,0 +1,196 @@
+body {
+  font-family: Baskerville, serif;
+  font-size: 18px;
+  background: url("/assets/newz.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+h2, h3 {
+  font-family: Baskerville, serif;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #000000;
+  font-size: 24px;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+h3:hover {
+  animation: blink 0.5s ease-in-out infinite;
+}
+
+
+h3:hover {
+  animation: heartbeat 0.5s ease-in-out infinite;
+}
+
+h5 {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(255, 255, 255);
+  color: darkblue;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid goldenrod;
+  transition: background-color 0.3s ease;
+}
+
+h5:hover {
+  background-color: rgb(255, 255, 255);
+  animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.tour-card {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: Baskerville, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-card .tour-card__img,
+.tour-card .tour-card__content {
+  flex: 1;
+  border: 2px solid #a78a22;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.tour-card .tour-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-card .tour-card__img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.tour-card .tour-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card p:before {
+  font-weight: bold;
+}
+
+p:contains("Gwiazdki")::before {
+  content: "★ ";
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.restaurant-name:before,
+.amenity:before {
+  font-weight: bold;
+}
+
+.restaurant-name:before {
+  content: "\00BB ";
+}
+
+.amenity:before {
+  content: "\2022 ";
+}
+
+.search-section {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0.5cm;
+  border-radius: 50%;
+  font-family: Baskerville, serif;
+}
+
+.search-section label {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search-section input,
+.search-section select {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: Baskerville, serif;
+  border: 2px solid #a78a22;
+  border-radius: 20px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.search-section input:focus,
+.search-section select:focus {
+  outline: none;
+  border-bottom: 1px solid #a78a22;
+  transition: border-bottom-color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-section button {
+  background-color: #d4af37;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Baskerville, serif;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+.search-section button:hover {
+  background-color: #a78a22;
+}

@@ -1,5 +1,5 @@
 .home {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8); /* Przezroczyste tło */
   color: rgb(0, 0, 0);
   padding: 20px;
   margin: 0.5cm;
@@ -7,6 +7,11 @@
   border-radius: 10px;
 }
 
+.travel-info {
+  background-color: rgba(248, 248, 248, 0.5); /* Przezroczyste tło */
+}
+
+/* Pozostała część kodu CSS */
 .travel-info h2 {
   font-size: 2em;
   border: 2px solid goldenrod;
